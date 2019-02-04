@@ -1,6 +1,7 @@
 FROM evarga/jenkins-slave
 MAINTAINER Fabian Schmidt
 
-RUN apt update
+RUN apt-get update
 
-RUN apt install -y git
+RUN apt-get install -y git
+RUN apt-get install -y openjdk-8-jdk
